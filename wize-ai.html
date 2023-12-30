@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalWize - WizeAI</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/ace-responsive-menu.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/ud-custom-spacing.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/wize-ai.css">
+</head>
+
+<body>
+
+    <!-- <div class="preloader"></div> -->
+
+    <div class='App'>
+        <div class='sidebar border-3 border-end'>
+            <div class="upperSide">
+                <div class="upperSideTop">
+                    <a href="index.html">
+                        <img src='./images/Legalwize-black.png' alt="Logo" width="200" class='logo' />
+                    </a>
+                </div>
+                <button class='ud-btn btn-thm w-100 px-4 mb-3'>
+                    <i class="ri-add-line me-1"></i> New Chat
+                </button>
+                <div class="upperSideButton">
+                    <button class='query'><i class="ri-message-2-line me-2"></i> What is Programming ?</button>
+                    <button class='query'><i class="ri-message-2-line me-2"></i> What is Programming ?</button>
+                </div>
+            </div>
+            <div class='lowerSide'>
+                <a href="index.html"><div class="listItems"><i class="ri-home-8-line me-1"></i> Home</div></a>
+                <div class="listItems"><i class="ri-bookmark-line me-1"></i> Saved</div>
+                <div class="listItems"><i class="ri-rocket-line me-1"></i> Upgrade to Pro</div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="chats" id="all-chats">
+                <!-- <div class="chat">
+                    <div class='user-icon'>
+                        <img src="images/user.jpg" width='30' height='30' alt="Not Found" />
+                    </div>
+                    <p class='txt'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, ut? Velit iste
+                        ipsam delectus quae esse explicabo ipsum culpa eum.</p>
+                </div> -->
+                <div class="chat bot">
+                    <div class='ai-icon'>
+                        <i class="ri-focus-2-line text-black"></i>
+                    </div>
+                    <p class='txt'>Greetings! I am Legalwize AI. 
+                        <br>Ready to assist you with all your legal inquiries.</p>
+                </div>
+            </div>
+            <div class="chatFooter">
+                <div class='inp'>
+                    <input type="text" name='user-input' id='userIp' value='' />
+                    <button class='send' id="mic-btn" type='button'>
+                        <i class="ri-mic-line"></i>
+                    </button>
+                    <button class='send' type='button' onclick="sendQueryToServer(userIp)">
+                        <i class="ri-send-plane-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/jquery.mmenu.all.js"></script>
+    <script src="js/ace-responsive-menu.js"></script>
+    <script src="js/jquery-scrolltofixed-min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+    <script src="js/pricing-table.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/wize-ai.js"></script>
+</body>
+
+</html>

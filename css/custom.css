@@ -1,0 +1,60 @@
+/* custom css */
+.law-port{
+  width: 100px !important;
+}
+
+.pfp-80{
+  width: 80px;
+}
+
+
+.owl-item > .slide::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+}
+.slide>.container{
+  z-index: 2;
+}
+
+/* my css */
+.header-logo.logo1 img{
+  width: 200px;
+}
+
+.login-info.sign-in:hover{
+  color: #5BBB7B;
+}
+.fa-circle{
+  font-size: 8px;
+  margin:0px 4px;
+}
+.bg-color{
+  background-color: #F1FCFA;
+}
+.text-color{
+  color: #5BBB7B;
+}
+.p-25{
+  padding: 25px;
+}
+.h-0{
+  height:30px !important;
+}
+.mb-6{
+  margin-bottom: 5.5rem;
+}
+
+.home2-cta-img{
+  width: 580px;
+  height: 680px;
+}
+
+.cta-img-home8.at-home7 {
+  bottom: -100px;
+  left: 150px; 
+}
