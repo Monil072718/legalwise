@@ -92,7 +92,8 @@ p {
     margin-bottom: .625rem;
     cursor: pointer;
 }
-.listItems:hover{
+
+.listItems:hover {
     background-color: whitesmoke;
 }
 
@@ -136,7 +137,7 @@ p {
     padding: .5rem;
 }
 
-.send:hover{
+.send:hover {
     background-color: #1f4b3f;
     color: white;
 }
@@ -161,7 +162,7 @@ p {
     scroll-behavior: smooth;
     width: 100%;
     max-width: 70rem;
-    height: calc(100vh - 17rem);
+    height: calc(100vh - 14rem);
 }
 
 .chats::-webkit-scrollbar {
@@ -184,6 +185,17 @@ p {
     object-fit: cover;
     margin-right: 1.2rem;
 }
-.ai-icon i{
+.ai-icon i {
     font-size: 20px;
+}
+.loading {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

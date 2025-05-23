@@ -30,7 +30,8 @@ function setHeader(id) {
                     class="flaticon-loupe"></span></a>
                 <a class="ud-btn btn-white add-joining bdrs50 text-thm2 mx-3" href="lawyer.html">Consult an
                   Expert</a>
-                <a class="login-info sign-in mr15-xl mr30 " href="login.html">Sign in</a>
+                <a class="ud-btn btn-white add-joining bdrs50 text-thm2"" href="cart.html">Add to Cart</a>
+                <a class="ud-btn btn-white add-joining bdrs50 text-thm2" href="login.html"> Sign In</a>
                 <a class="ud-btn btn-white add-joining bdrs50 text-thm2" href="register.html"> Sign Up</a>
               </div>
             </div>

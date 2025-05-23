@@ -6,7 +6,7 @@ import cors from 'cors';
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 3001;
-const openai = new OpenAI({apiKey: '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'});
+const openai = new OpenAI({apiKey: ''});
 
 app.use(express.json());
 app.use(cors());

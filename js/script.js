@@ -118,20 +118,20 @@
     });
 
     /* ----- Mobile Nav ----- */
-    document.addEventListener('DOMContentLoaded', () => {
-      new Mmenu("#menu", {
-        navbar: {
-        title: "Menu"
-      },
-      searchfield: {
-        add: false,
-        addTo: "#contacts"
-      },
-      offCanvas: {
-        position: "left-front"
-      }},
-      {});        
-    });
+    // document.addEventListener('DOMContentLoaded', () => {
+    //   new Mmenu("#menu", {
+    //     navbar: {
+    //     title: "Menu"
+    //   },
+    //   searchfield: {
+    //     add: false,
+    //     addTo: "#contacts"
+    //   },
+    //   offCanvas: {
+    //     position: "left-front"
+    //   }},
+    //   {});        
+    // });
 
     /* ----- Custom Search Dropdown Script Start ----- */
     var showSuggestions = function() {

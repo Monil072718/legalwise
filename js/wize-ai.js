@@ -46,28 +46,32 @@ function stopRecognition() {
     isListening = false;
 }
 
+
 function sendQueryToServer(input) {
     const allChats = document.getElementById('all-chats');
     if (input.value == '') {
         alert("Please enter a query!");
         return;
     }
-    const userPrompt = input.value;
+    const prefix = `
+        Give me detailed answer of My question :- \n
+    `;
+    let userPrompt = input.value;
     allChats.innerHTML += `
-                <div class="chat">
-                    <div class='user-icon'>
-                        <img src="images/user.jpg" width='30' height='30' alt="Not Found" />
-                    </div>
-                    <p class='txt'>${userPrompt}</p>
-                </div>
-            `;
-        fetch('http://localhost:3001/generate-response', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ input: userPrompt }),
-        })
+    <div class="chat">
+      <div class='user-icon'>
+        <img src="images/user.jpg" width='30' height='30' alt="Not Found" />
+      </div>
+      <p class='txt'>${userPrompt}</p>
+    </div>`;
+    userPrompt = prefix + input.value;
+    fetch('http://localhost:3001/generate-response', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ input: userPrompt }),
+    })
         .then(response => response.json())
         .then(data => {
             displayResponseWordByWord(data.responseData);
@@ -79,6 +83,7 @@ function sendQueryToServer(input) {
     input.value = '';
 }
 
+
 function displayResponseWordByWord(response) {
     const allChats = document.getElementById('all-chats');
     const formattedResponse = response.replace(/\n/g, '<br>');
@@ -89,17 +94,20 @@ function displayResponseWordByWord(response) {
     aiIconDiv.innerHTML = '<i class="ri-focus-2-line text-black"></i>';
     const p = document.createElement('p');
     p.className = 'txt';
-    p.innerHTML = formattedResponse;
     botResponseDiv.appendChild(aiIconDiv);
     botResponseDiv.appendChild(p);
     allChats.appendChild(botResponseDiv);
-    let words = formattedResponse.split(/\s+/); // Split response into words
+    let words = formattedResponse.split(/\s+/);
     let index = 0;
+    let totalWords = words.length;
+    let delay = Math.max(30, 3000 / totalWords);
     function appendWord() {
-        if (index < words.length) {
-            p.textContent += words[index] + ' ';
+        if (index < totalWords) {
+            p.innerHTML += words[index] + ' ';
             index++;
-            setTimeout(appendWord, 100);
+            if (index < totalWords) {
+                setTimeout(appendWord, delay);
+            }
         }
     }
     appendWord();
