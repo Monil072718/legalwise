@@ -18,7 +18,7 @@ function setHeader(id) {
                   <li class="visible_list"><a class="list-item" href="documentation.html"><span class="title">Study Material</span></a>
                   </li>
                   <li class="visible_list"> <a class="list-item" href="casestudy.html"><span class="title">Case Study</span></a>
-                  </li>
+                  </li>  
                   <li class="visible_list"> <a class="list-item" href="wize-ai.html"><span class="title">Wize AI</span></a></li>
                   <li class=""> <a class="list-item" href="contact.html"><span class="title">Contact</span></a></li>
                 </ul>
